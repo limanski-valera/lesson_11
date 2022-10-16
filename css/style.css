@@ -1,0 +1,214 @@
+/* ================================ Підключення шрифтів =========================================================== */
+/* Lato */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+/* ================================ Основні стилі ================================================================= */
+body {
+    background: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    color: #424551;
+}
+[class*="__container"]{
+    max-width: 810px;
+    margin: 0 auto;
+}
+.wrapper{
+    overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+/* ================================================= */
+.car {
+    width: 100%;
+    height: 100%;
+}
+.car__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.car__container {
+    position: relative;
+    height: 200px;
+    bottom: -480px;
+    width: 100%;
+}
+.wheel {
+    position: absolute;
+    bottom: 100px;
+    z-index: 10;
+}
+.wheel--forward{
+    left: 200px;
+}
+.wheel--rear {
+    right: 200px;
+}
+.wheel__tire {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border-radius: 50px;
+}
+.wheel__rim {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 7px solid silver;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(26, 38, 49);
+}
+.rim__spoke {
+    position: absolute;
+    background-color: silver;
+    width: 5px;
+    height: 70px;
+}
+.rim__first-spoke {
+    top: 0;
+    left: 30px;
+}
+.rim__second-spoke {
+    transform: rotate(90deg);
+    left: 30px;
+}
+.rim__third-spoke {
+    transform: rotate(45deg);
+    left: 30px;
+}
+.rim__fourth-spoke {
+    transform: rotate(-45deg);
+    left: 30px;
+}
+.car__threshold {
+    width: 290px;
+    height: 20px;
+    background-color: rgb(118, 29, 29);
+    position: absolute;
+    bottom: 20px;
+    left: 310px;
+    z-index: 10;
+}
+.arch {
+    width: 120px;
+    height: 85px;
+    background-color: rgb(118, 29, 29);
+    border-radius: 50% 50% 10% 10% / 70% 70% 0% 0%;
+    position: absolute;
+    bottom: 20px;
+    z-index: 9;
+}
+.arch--forward {
+    left: 190px;
+}
+.arch--rear {
+    right: 90px;
+}
+.arch__shadow {
+    background-color: rgb(29, 27, 27);
+    width: 110px;
+    height: 80px;
+    border-radius: 50% 50% 10% 10% / 70% 70% 0% 0%;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+}
+.car__front {
+    background-color: brown;
+    border-radius: 100% 0% 10% 10% / 64% 0% 0% 9%;
+    width: 190px;
+    height: 110px;
+    position: absolute;
+    bottom: 20px;
+    left: 140px;
+    z-index: 8;
+}
+.front__repeate-turn {
+    background-color: orangered;
+    border: 1px solid rgb(72, 39, 27);
+    width: 10px;
+    height: 5px;
+    border-radius: 25%;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.fornt__headlight {
+    border-radius: 100% 10% 30% 25% / 100% 10% 100% 23%;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(184, 184, 113);
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.front__bumper {
+    background-color: rgb(118, 29, 29);
+    position: absolute;
+    border-radius: 20% 0% 0% 30% / 20% 0% 0% 20%;
+    height: 30px;
+    width: 100px;
+    bottom: 0px;
+    left: -5px;
+}
+.car__frame {
+    background-color: brown;
+    position: absolute;
+    width: 450px;
+    height: 170px;
+    border-radius: 100% 90% 70% 25% / 90% 80% 30% 40%;
+    bottom: 20px;
+    left: 320px;
+}
+.car__door {
+    border-radius: 100% 0% 10% 10% / 39% 55% 0% 0%;
+    background-color: rgb(184, 51, 51);
+    height: 150px;
+    width: 260px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.door__window {
+    background-color: rgb(16, 43, 55);
+    position: absolute;
+    border-radius: 100% 0% 10% 10% / 100% 55% 0% 0%;
+    height: 50px;
+    width: 240px;
+    top: 5px;
+    left: 10px;
+}
+.door__handle {
+    background-color: black;
+    height: 5px;
+    width: 30px;
+    border-radius: 20%;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+}
+.car__leaf {
+    background-color: rgb(16, 43, 55);
+    position: absolute;
+    border-radius: 0% 70% 10% 10% / 0% 80% 0% 0%;
+    height: 50px;
+    width: 100px;
+    top: 20px;
+    right: 70px;
+}
+.car__bumper {
+    background-color: rgb(118, 29, 29);
+    position: absolute;
+    border-radius: 0% 0% 40% 0% / 0% 0% 80% 0%;
+    height: 50px;
+    width: 100px;
+    bottom: 0px;
+    right: -10px;
+}
+/* =================================================  */
